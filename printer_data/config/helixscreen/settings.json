@@ -32,7 +32,7 @@
     "scroll_throw": 25,
     "touch_device": ""
   },
-  "language": "de",
+  "language": "en",
   "led": {
     "auto_state": {
       "enabled": null
