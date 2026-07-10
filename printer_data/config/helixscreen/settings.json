@@ -69,7 +69,7 @@
       "fans": {
         "aux": "fan_generic internal_fan",
         "chamber": "heater_fan chamber_fan",
-        "exhaust": "fan_generic external_fan",
+        "exhaust": "",
         "hotend": "heater_fan bed_fan",
         "part": "fan"
       },
