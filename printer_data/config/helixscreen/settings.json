@@ -1,0 +1,176 @@
+{
+  "active_printer_id": "default",
+  "config_version": 19,
+  "dark_mode": true,
+  "display": {
+    "animations_enabled": false,
+    "bed_mesh_render_mode": 0,
+    "dim_brightness": 30,
+    "dim_sec": 600,
+    "drm_device": "",
+    "gcode_render_mode": 0,
+    "gpu_3d_blocked": false,
+    "sleep_sec": 1200
+  },
+  "gcode_viewer": {
+    "shading_model": "phong",
+    "tube_sides": 4
+  },
+  "input": {
+    "calibration": {
+      "a": 1.0,
+      "b": 0.0,
+      "c": 0.0,
+      "d": 0.0,
+      "e": 1.0,
+      "f": 0.0,
+      "recheck_pending": false,
+      "valid": false
+    },
+    "jitter_threshold": 5,
+    "scroll_limit": 10,
+    "scroll_throw": 25,
+    "touch_device": ""
+  },
+  "led": {
+    "selected_strips": null
+  },
+  "log_path": "/tmp/helixscreen.log",
+  "motion": {
+    "jog_mode": 1
+  },
+  "preset": "ad5m_pro",
+  "printers": {
+    "default": {
+      "default_macros": {
+        "cooldown": "SET_HEATER_TEMPERATURE HEATER=extruder TARGET=0\nSET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=0",
+        "load_filament": {
+          "gcode": "LOAD_FILAMENT",
+          "label": "Load"
+        },
+        "macro_1": {
+          "gcode": "CLEAR_NOZZLE",
+          "label": "Clean Nozzle"
+        },
+        "macro_2": {
+          "gcode": "AUTO_FULL_BED_LEVEL",
+          "label": "Bed Level"
+        },
+        "unload_filament": {
+          "gcode": "UNLOAD_FILAMENT",
+          "label": "Unload"
+        }
+      },
+      "extra_sensors": {},
+      "fans": {
+        "aux": "fan_generic internal_fan",
+        "chamber": "fan_generic chamber_fan",
+        "exhaust": "fan_generic external_fan",
+        "hotend": "heater_fan hotend_fan",
+        "part": "fan"
+      },
+      "filament_sensors": {
+        "master_enabled": true,
+        "sensors": [
+          {
+            "enabled": true,
+            "klipper_name": "filament_switch_sensor runout_sensor",
+            "role": "runout",
+            "type": "switch"
+          }
+        ]
+      },
+      "hardware": {
+        "expected": [
+          "heater_bed",
+          "extruder",
+          "fan",
+          "heater_fan hotend_fan",
+          "fan_generic internal_fan",
+          "fan_generic chamber_fan",
+          "fan_generic external_fan",
+          "led chamber_led",
+          "controller_fan stepper_driver_fan",
+          "filament_switch_sensor runout_sensor"
+        ],
+        "last_snapshot": {
+          "fans": [
+            "fan",
+            "heater_fan bed_fan",
+            "controller_fan controller_fan",
+            "heater_fan chamber_fan"
+          ],
+          "filament_sensors": [],
+          "heaters": [
+            "heater_bed",
+            "heater_generic chamber",
+            "extruder"
+          ],
+          "leds": [
+            "output_pin chamber_light"
+          ],
+          "sensors": [
+            "tmc5160 stepper_x",
+            "temperature_sensor steppers",
+            "tmc5160 stepper_y",
+            "temperature_sensor beacon_coil",
+            "temperature_sensor heater_core",
+            "temperature_sensor host",
+            "temperature_sensor octopus"
+          ],
+          "timestamp": "2026-06-02T01:26:01Z"
+        },
+        "optional": []
+      },
+      "heaters": {
+        "bed": "heater_bed",
+        "hotend": "extruder"
+      },
+      "input": {
+        "jitter_threshold": 5,
+        "scroll_guard": true,
+        "scroll_limit": 10,
+        "scroll_throw": 25
+      },
+      "leds": {
+        "color_presets": [
+          "#FFFFFF",
+          "#FFD700",
+          "#FF6B35",
+          "#4FC3F7",
+          "#FF4444",
+          "#66BB6A",
+          "#9C27B0",
+          "#00BCD4"
+        ],
+        "last_brightness": 100,
+        "last_color": "#FFFFFF",
+        "last_white": 0.0,
+        "led_on_at_start": false,
+        "macro_devices": [],
+        "selected": [],
+        "selected_strips": [
+          "output_pin chamber_light"
+        ],
+        "startup_brightness": 80,
+        "strip": "led chamber_led"
+      },
+      "moonraker_api_key": false,
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": 7125,
+      "probe_sensors": {
+        "sensors": null
+      },
+      "temp_sensors": {
+        "bed": "heater_bed",
+        "hotend": "extruder"
+      },
+      "type": "FlashForge Adventurer 5M Pro"
+    },
+    "show_printer_switcher": false
+  },
+  "telemetry_enabled": false,
+  "theme": {
+    "preset": 0
+  }
+}
