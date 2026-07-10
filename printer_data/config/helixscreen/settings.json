@@ -68,9 +68,9 @@
       "extra_sensors": {},
       "fans": {
         "aux": "fan_generic internal_fan",
-        "chamber": "fan_generic chamber_fan",
+        "chamber": "heater_fan chamber_fan",
         "exhaust": "fan_generic external_fan",
-        "hotend": "heater_fan hotend_fan",
+        "hotend": "heater_fan bed_fan",
         "part": "fan"
       },
       "filament_sensors": {
@@ -122,7 +122,7 @@
             "temperature_sensor host",
             "temperature_sensor octopus"
           ],
-          "timestamp": "2026-07-10T03:48:11Z"
+          "timestamp": "2026-07-10T03:48:26Z"
         },
         "optional": []
       },
@@ -489,6 +489,13 @@
   "telemetry_enabled": false,
   "theme": {
     "preset": 0
+  },
+  "ui": {
+    "cached_grid": {
+      "home": {
+        "rows": 8
+      }
+    }
   },
   "wizard_completed": true
 }
