@@ -32,7 +32,11 @@
     "scroll_throw": 25,
     "touch_device": ""
   },
+  "language": "de",
   "led": {
+    "auto_state": {
+      "enabled": null
+    },
     "selected_strips": null
   },
   "log_path": "/tmp/helixscreen.log",
@@ -118,7 +122,7 @@
             "temperature_sensor host",
             "temperature_sensor octopus"
           ],
-          "timestamp": "2026-06-02T01:26:01Z"
+          "timestamp": "2026-07-10T03:47:52Z"
         },
         "optional": []
       },
@@ -133,6 +137,9 @@
         "scroll_throw": 25
       },
       "leds": {
+        "auto_state": {
+          "mappings": null
+        },
         "color_presets": [
           "#FFFFFF",
           "#FFD700",
